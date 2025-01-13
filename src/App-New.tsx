@@ -8,6 +8,8 @@ function App() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const parameter = queryParams.get('meeting_id');
+  const passcode = queryParams.get('passcode');
+  const usernames = queryParams.get('username');
   console.log("first request",parameter)
   // const { me } = useParams();
 
@@ -24,9 +26,9 @@ function App() {
   const authEndpoint = "https://zoomauthserver.onrender.com"; // http://localhost:4000
   const sdkKey = "sLCjS5FQQOrr85PhrkIbQ";
   const meetingNumber = parameter || "0";
-  const passWord = "QLW2T7";
+  const passWord = passcode || "";
   const role = 0;
-  const userName = "React";
+  const userName = usernames || "React";
   const userEmail = "";
   const registrantToken = "";
   const zakToken = "";

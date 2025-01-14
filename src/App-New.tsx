@@ -24,7 +24,7 @@ function App() {
   // const zakToken = "";
 
   const authEndpoint = "https://zoomauthserver.onrender.com"; // http://localhost:4000
-  const sdkKey = "sLCjS5FQQOrr85PhrkIbQ";
+  const sdkKey = "ZvGQbuoBSDSo4mobouxfPA";
   const meetingNumber = parameter || "0";
   const passWord = passcode || "";
   const role = 0;

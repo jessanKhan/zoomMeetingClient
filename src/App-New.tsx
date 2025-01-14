@@ -83,7 +83,7 @@ function App() {
       <main>
         <h1>Training room Prototype</h1>
         {/* For Component View */}
-        <div id="meetingSDKElement">
+        <div id="meetingSDKElement" style={{ display:"flex", justifyContent:"center", alignItems:"center"}}>
           {/* Zoom Meeting SDK Component View Rendered Here */}
         </div>
         <button onClick={getSignature}>Join Meeting</button>
